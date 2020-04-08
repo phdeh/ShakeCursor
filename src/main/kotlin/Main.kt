@@ -5,7 +5,7 @@ import kotlin.math.*
 import kotlin.system.*
 
 const val period = 1000L * 60L
-const val delay = 1
+const val delay = 10L
 
 val robot = Robot()
 val timer = Timer()
@@ -17,7 +17,7 @@ fun shakeCursor() {
     val x1 = abs(location.x - 10) + 1
     val x2 = location.x
     robot.mouseMove(x1, y)
-    robot.delay(delay)
+    Thread.sleep(delay)
     robot.mouseMove(x2, y)
 }
 
