@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+ShakeCursor: ShakeCursor
+Implementation-Version: 1
+Main-Class: MainKt
+
